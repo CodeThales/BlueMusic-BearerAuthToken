@@ -1,2 +1,9 @@
 # BlueMusic-BearerAuthToken
- API Restfull Com Bearer Authentication Token
+
+ Project: Web API Restful C# for music, using:
+ .Net Core
+ Asp Net Core Entity Framework
+ SQL Server
+ Dependency Injection
+ Roles (Advanced CRUD)
+ Bearer Authentication Token
