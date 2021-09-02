@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ssjtj7v7EmIYpGdRikCVmAEqn2iKzteiMxrbYkSL66ruMhZTecpMhgh2ScFMrJeXBmEHw34Vp6dj5p4+Sxn3Sw==",
+  "dgSpecHash": "c3vasSH/EgTDV10Lp3u/1Js5OrSMRM8VwQp9oMUwaBy+QC40KANrLgMtdUKTNez5mjGr9PvTKZi8p9y776KLGA==",
   "success": true,
-  "projectFilePath": "D:\\O Talito\\Documents\\Cursos\\Programação e Desenvolvimento\\Blue EdTech\\Modulo 04 - BackEnd\\BlueMusicBearerAutToken\\BlueMusicBearerAutToken.csproj",
+  "projectFilePath": "D:\\O Talito\\Documents\\Cursos\\Programação e Desenvolvimento\\Blue EdTech\\Modulo 04 - BackEnd\\BlueMusic-BearerAuthToken\\BlueMusicBearerAutToken\\BlueMusicBearerAutToken.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thales Ribero\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Thales Ribero\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
