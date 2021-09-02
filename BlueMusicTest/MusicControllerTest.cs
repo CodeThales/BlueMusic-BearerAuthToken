@@ -4,7 +4,6 @@ using BlueMusicBearerAutToken.Models;
 using BlueMusicBearerAutToken.Services;
 using FakeItEasy;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using Xunit;
 
@@ -38,6 +37,45 @@ namespace BlueMusicTest
                 values.Message == "" &&
                 values.Succeed
                 );
+        }
+
+        [Theory]
+        [InlineData(1)]
+        [InlineData(5)]
+        [InlineData(10)]
+        [InlineData(0, "Música não encontrada.", false)]
+        [InlineData(20, "Música não encontrada.", false)]
+        [InlineData(873, "Música não encontrada.", false)]
+        [InlineData(-30, "Música não encontrada.", false)]
+        [InlineData(null, "Música não encontrada.", false)]        
+        public void GetMusic_Return_Music_By_Id(int? id, string message = "", bool succeed = true)
+        {
+            var musicService = A.Fake<IMusicService>();
+            A.CallTo(() => musicService.Get(id)).Returns(fakeMusics.Find(m => m.Id == id));
+            var controller = new MusicController(musicService);
+
+            ObjectResult result = controller.Index(id) as ObjectResult;
+
+            var exists = fakeMusics.Find(m => m.Id == id) != null;
+
+            if (exists)
+            {
+                var values = result.Value as APIResponse<Music>;
+                Assert.True(
+                    values.Results == fakeMusics.Find(m => m.Id == id) &&
+                    values.Message == message &&
+                    values.Succeed == succeed
+                    );
+            }
+            else
+            {
+                var values = result.Value as APIResponse<string>;
+                Assert.True(
+                    values.Results == null &&
+                    values.Message == message &&
+                    values.Succeed == succeed
+                    );
+            }            
         }
     }
 }

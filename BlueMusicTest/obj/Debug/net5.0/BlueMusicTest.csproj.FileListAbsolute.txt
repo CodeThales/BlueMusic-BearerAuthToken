@@ -5,7 +5,6 @@ D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\BlueMusicBearerAutToken.runtimeconfig.dev.json
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\appsettings.Development.json
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\appsettings.json
-D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\BlueMusicBearerAutToken.StaticWebAssets.xml
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\BlueMusicBearerAutToken.exe
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\testhost.exe
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicTest\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
