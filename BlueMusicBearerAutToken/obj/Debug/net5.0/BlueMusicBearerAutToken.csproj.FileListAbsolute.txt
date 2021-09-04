@@ -140,3 +140,4 @@ D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicBearerAutToken\obj\Debug\net5.0\ref\BlueMusicBearerAutToken.dll
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicBearerAutToken\obj\Debug\net5.0\BlueMusicBearerAutToken.pdb
 D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicBearerAutToken\obj\Debug\net5.0\BlueMusicBearerAutToken.genruntimeconfig.cache
+D:\O Talito\Documents\Cursos\Programação e Desenvolvimento\Blue EdTech\Modulo 04 - BackEnd\BlueMusic-BearerAuthToken\BlueMusicBearerAutToken\bin\Debug\net5.0\BlueMusicBearerAutToken.xml

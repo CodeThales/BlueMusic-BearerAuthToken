@@ -19,6 +19,11 @@ namespace BlueMusicBearerAutToken.Controllers
         }
 
 
+        /// <summary>
+        /// Creates a new user for the API
+        /// </summary>
+        /// <param name="identityUser"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("Register")]
         [AllowAnonymous]
@@ -32,6 +37,11 @@ namespace BlueMusicBearerAutToken.Controllers
         }
 
 
+        /// <summary>
+        /// Get an access token for an authorized user.
+        /// </summary>
+        /// <param name="identityUser"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("Token")]
         [AllowAnonymous]

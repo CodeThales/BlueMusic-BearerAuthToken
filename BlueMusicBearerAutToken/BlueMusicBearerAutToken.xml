@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlueMusicBearerAutToken</name>
+    </assembly>
+    <members>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Index">
+            <summary>
+            Returns a list of all songs registered in database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Index(System.Nullable{System.Int32})">
+            <summary>
+            Returns a especific song according to Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Random">
+            <summary>
+            Returns a song from the database at random
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Create(BlueMusicBearerAutToken.Models.Music)">
+            <summary>
+            Creates a specific song according to the values ​​passed in the request body
+            </summary>
+            <param name="music"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Update(BlueMusicBearerAutToken.Models.Music)">
+            <summary>
+            Updates a specific song according to the values ​​passed in the request body
+            </summary>
+            <param name="music"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Deletes a specific song according to Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.MusicsByRole(System.String)">
+            <summary>
+            Returns all songs created by a specific role
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

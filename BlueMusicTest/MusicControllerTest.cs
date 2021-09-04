@@ -14,12 +14,15 @@ namespace BlueMusicTest
 
         int MusicQuantity = 10;
         List<Music> fakeMusics;
+        //Music fakeMusic;
 
         public MusicControllerTest()
         {
             fakeMusics = new List<Music>();
             for (var i = 1; i <= MusicQuantity; i++)
-                fakeMusics.Add(new Music { Id = 1, Name = $"Music {i}" });
+                fakeMusics.Add(new Music { Id = i, Name = $"Music {i}" });
+
+            //fakeMusic = new Music { Id = 1, Name = "Yellow Submarine", Author = "Beatles", Duration = 238, Link = "www.beatles.com/music/yellowsubmarine" };
         }
 
         [Fact]
@@ -62,20 +65,56 @@ namespace BlueMusicTest
             {
                 var values = result.Value as APIResponse<Music>;
                 Assert.True(
-                    values.Results == fakeMusics.Find(m => m.Id == id) &&
+                    values.Succeed == succeed &&
                     values.Message == message &&
-                    values.Succeed == succeed
+                    values.Results == fakeMusics.Find(m => m.Id == id) 
                     );
             }
             else
             {
                 var values = result.Value as APIResponse<string>;
                 Assert.True(
-                    values.Results == null &&
+                    values.Succeed == succeed &&
                     values.Message == message &&
-                    values.Succeed == succeed
+                    values.Results == null 
                     );
             }            
         }
+
+        //Tentei testar o create mas não rolou ainda :(
+
+        //[Theory]
+        //[InlineData(m, "Música inserida com sucesso.", true)]
+        //[InlineData(m, "Erro ao inserir música.", false)]
+
+        //public void CreateMusic_Return_Created(Music m, string message = "", bool succeed = true)
+        //{
+        //    var musicService = A.Fake<IMusicService>();
+        //    A.CallTo(() => musicService.Create(m)).Returns(true);
+
+        //    var controller = new MusicController(musicService);
+        //    ObjectResult result = controller.Create(m) as ObjectResult;
+
+        //    var created = fakeMusic.Name == "Yellow Submarine";
+
+        //    if (created)
+        //    {
+        //        var values = result.Value as APIResponse<Music>;
+        //        Assert.True(
+        //            values.Succeed == succeed &&
+        //            values.Message == message &&
+        //            values.Results == fakeMusics.Find(m => m.Name == )
+        //            );
+        //    }
+        //    else
+        //    {
+        //        var values = result.Value as APIResponse<string>;
+        //        Assert.True(
+        //            values.Succeed == succeed &&
+        //            values.Message == message && 
+        //            values.Results == null
+        //            );
+        //    }
+        //}
     }
 }

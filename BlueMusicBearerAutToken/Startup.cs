@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
+using System.IO;
+using System.Reflection;
 using System.Text;
 
 
@@ -49,9 +51,29 @@ namespace BlueMusicBearerAutToken
             #region DefaultSwagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BlueMusicBearerAutToken", Version = "v1" });
+                c.SwaggerDoc("v1", 
+                    new OpenApiInfo 
+                    { Title = "BlueMusicBearerAutToken",
+                      Description = "An API created to store and list songs for your delight.",
+                      Contact = new OpenApiContact
+                      {
+                          Name = "Thales Ribeiro",
+                          Email = "codethales@gmail.com",
+                          Url = new Uri("https://github.com/CodeThales")
+                      },
+                      License = new OpenApiLicense
+                      {
+                          Name = "MIT License",
+                          Url = new Uri("https://www.mit.edu/~amini/LICENSE.md")
+                      },                     
+                      Version = "v1" });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = $"{Path.Combine(AppContext.BaseDirectory, xmlFile)}";
+                c.IncludeXmlComments(xmlPath);
             });
             #endregion
+
 
             #region Configure Bearer Authentication
             var key = Encoding.ASCII.GetBytes(Configuration["Jwt:Key"]);
