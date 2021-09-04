@@ -128,8 +128,7 @@ namespace BlueMusicBearerAutToken.Controllers
         /// </summary>
         /// <param name="role"></param>
         /// <returns></returns>
-        [HttpGet]
-        [AllowAnonymous]
+        [HttpGet]        
         [Route("MusicsByRole/{role?}")]        
         public IActionResult MusicsByRole(string role)
         {

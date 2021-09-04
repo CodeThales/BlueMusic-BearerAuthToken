@@ -4,24 +4,38 @@
         <name>BlueMusicBearerAutToken</name>
     </assembly>
     <members>
+        <member name="M:BlueMusicBearerAutToken.Controllers.AuthController.Register(Microsoft.AspNetCore.Identity.IdentityUser)">
+            <summary>
+            Creates a new user for the API
+            </summary>
+            <param name="identityUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlueMusicBearerAutToken.Controllers.AuthController.Token(Microsoft.AspNetCore.Identity.IdentityUser)">
+            <summary>
+            Get an access token for an authorized user.
+            </summary>
+            <param name="identityUser"></param>
+            <returns></returns>
+        </member>
         <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Index">
             <summary>
             Returns a list of all songs registered in database
             </summary>
-            <returns></returns>
+            <returns></returns>        
         </member>
         <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Index(System.Nullable{System.Int32})">
             <summary>
             Returns a especific song according to Id
             </summary>
             <param name="id"></param>
-            <returns></returns>
+            <returns></returns>        
         </member>
         <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Random">
             <summary>
             Returns a song from the database at random
             </summary>
-            <returns></returns>
+            <returns></returns>        
         </member>
         <member name="M:BlueMusicBearerAutToken.Controllers.MusicController.Create(BlueMusicBearerAutToken.Models.Music)">
             <summary>
